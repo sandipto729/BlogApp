@@ -7,6 +7,12 @@ import Home from '../pages/HomePage/Home';
 import UserLogin from '../Authentication/LoginForm/LoginUp';
 import UserProfile from './../pages/UserProfile/UserProfilepage';
 import UserSignUp from './../Authentication/SignUp/Signup';
+import AllUser from './../pages/UserProfile/AllUser/AllUser'
+import AllBlogs from './../pages/UserProfile/AllBlogs/AlBlogs'
+import SelectedBlog from './../pages/UserProfile/SelectedBlog/SelectedBlog'
+import AdminAddBlog from './../pages/AddBlog/Admin/AddBlog'
+import UserAddBlog from './../pages/AddBlog/User/AddBlog'
+import TempBlog from './../pages/UserProfile/TempBlog/tempBlog'
 
 const router = createBrowserRouter([
     {
@@ -41,6 +47,36 @@ const router = createBrowserRouter([
             {
                 path: 'profile',
                 element: <UserProfile />,
+                children:[
+                    {
+                        index:true,
+                        element:<AllBlogs/>
+                    },
+                    {
+                        path:'userdetails',
+                        element:< AllUser/>,
+                    },
+                    {
+                        path:'allblog',
+                        element:<AllBlogs/>
+                    },
+                    {
+                        path:'yourblog',
+                        element:<SelectedBlog/>
+                    },
+                    {
+                        path:'adminaddBlog',
+                        element:<AdminAddBlog/>
+                    },
+                    {
+                        path:'useraddBlog',
+                        element:<UserAddBlog/>
+                    },
+                    {
+                        path:'tempBlog',
+                        element:<TempBlog/>
+                    }
+                ]
             }
         ]
     },
