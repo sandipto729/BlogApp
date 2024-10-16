@@ -1,0 +1,14 @@
+.allBlogsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .editDelete{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+  }

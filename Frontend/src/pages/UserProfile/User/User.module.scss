@@ -1,0 +1,36 @@
+.container {
+    display: flex;  // Use flexbox for layout
+    min-height: 100vh; // Set height to occupy full viewport height
+
+    .leftBar {
+        width: 20%; // Fixed width for left bar
+        padding: 20px; // Add some padding
+        background-color: #f8f8f8; // Light background color
+        border-right: 1px solid #ddd; // Optional border for separation
+
+        p {
+            margin: 10px 0; // Spacing between paragraphs
+        }
+
+        .EditProfile,
+        .BlogDetails {
+            display: block; // Make links block elements for full-width
+            margin: 10px 0; // Space between links
+            padding: 10px; // Padding inside links
+            text-decoration: none; // Remove underline from links
+            color: #007bff; // Change link color
+            border-radius: 5px; // Rounded corners
+
+            &:hover {
+                background-color: #e7f1ff; // Hover effect
+            }
+        }
+    }
+
+    .rightBar {
+        width: 80%;
+        flex-grow: 1; // Allow right bar to fill the remaining space
+        padding: 20px; // Add some padding
+        background-color: #fff; // White background for right bar
+    }
+}

@@ -20,7 +20,39 @@ const summeryApi={
     GetBlogID:{
         url: `${backendUrl}/api/getBlogID`,
         method: "POST",
-    }
+    },
+    AllUser:{
+        url: `${backendUrl}/api/alluser`,
+        method: "GET",
+    },
+    AllBlogs:{
+        url: `${backendUrl}/api/allBlogs`,
+        method: "GET",
+    },
+    SelectedBlog:{
+        url: `${backendUrl}/api/getSelectedBlog`,
+        method: "GET",
+    },
+    AdminBlogAdd:{
+        url:`${backendUrl}/api/adminaddBlog`,
+        method:"POST",
+    },
+    UserBlogAdd:{
+        url:`${backendUrl}/api/tempBlogAdd`,
+        method:"POST",
+    },
+    TempBlogFetch:{
+        url:`${backendUrl}/api/tempBlogFetch`,
+        method:"GET",
+    },
+    TempBlogDelete:{
+        url:`${backendUrl}/api/deleteTempBlog`,
+        method:"POST",
+    },
+    TempBlogToMain:{
+        url:`${backendUrl}/api/tempToMain`,
+        method:"POST",
+    },
 }
 
 

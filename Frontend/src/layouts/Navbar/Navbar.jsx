@@ -6,7 +6,7 @@ import "./navbar.css";
 
 function Navbar() {
 	const user = useSelector((state) => state.user.user); // Select user from Redux
-	console.log('faulty user', user); // Debug output
+	// console.log('faulty user', user); // Debug output
 	const navRef = useRef();
 
 	const showNavbar = () => {
