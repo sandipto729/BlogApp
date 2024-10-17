@@ -39,8 +39,6 @@ const Profilepage = () => {
     return (
         <div className={styles.container}>
             <div className={styles.leftBar}>
-                {/* <p>Welcome <span className='font-bold'>{profile.name}</span> in infoma</p>
-                <p>Email: <span className='font-bold'>{profile.email}</span></p> */}
                 
                 {(user && user.role==="admin") ? <Admin profile={profile} /> : <User profile={profile} />}
                 

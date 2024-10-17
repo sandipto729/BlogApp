@@ -50,7 +50,7 @@ const router = createBrowserRouter([
                 children:[
                     {
                         index:true,
-                        element:<AllBlogs/>
+                        element:<SelectedBlog/>
                     },
                     {
                         path:'userdetails',

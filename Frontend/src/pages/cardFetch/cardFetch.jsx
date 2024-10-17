@@ -104,7 +104,7 @@ const CardFetch = () => {
   const [card, setCard] = useState([]);
   const [currPage, setCurrPage] = useState(1);
   const [maxPage, setMaxPage] = useState(1);
-  const blogPerPage = 4;
+  const blogPerPage = 16;
 
   const blogPageRef = useRef(null);
   const { ref: blogPage, inView: animationBlog } = useInView({

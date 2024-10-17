@@ -53,6 +53,22 @@ const summeryApi={
         url:`${backendUrl}/api/tempToMain`,
         method:"POST",
     },
+    DeleteAnyBlog:{
+        url:`${backendUrl}/api/deleteanyBlog`,
+        method:"POST",
+    },
+    DeleteYourBlog:{
+        url:`${backendUrl}/api/deleteyourBlog`,
+        method:"POST",
+    },
+    UpdateAnyBlog:{
+        url:`${backendUrl}/api/updateanyBlog`,
+        method:"POST",
+    },
+    UpdateYourBlog:{
+        url:`${backendUrl}/api/updateyourBlog`,
+        method:"POST",
+    },
 }
 
 

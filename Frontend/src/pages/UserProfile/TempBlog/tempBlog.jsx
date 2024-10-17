@@ -85,7 +85,7 @@ const TempBlogs = () => {
     <div className={styles.allBlogsContainer}>
       {blogs.map((blog) => (
         <div key={blog._id} className={styles.blogCard}>
-          <CardModel blog={blog} />
+          <CardModel blog={blog} flag={false}/>
           <div className={styles.editDelete}>
             <p onClick={() => confirmBlog(blog._id)}>Confirm</p>
             <p onClick={() => deleteBlog(blog._id)}>Delete</p>

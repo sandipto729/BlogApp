@@ -1,15 +1,18 @@
 .container {
     display: flex;  // Use flexbox for layout
     min-height: 100vh; // Set height to occupy full viewport height
+    width: 99vw;
+    margin: 0 auto;
 
     .leftBar {
-        width: 20%; // Fixed width for left bar
+        width: 20%; 
         padding: 20px; // Add some padding
         background-color: #f8f8f8; // Light background color
         border-right: 1px solid #ddd; // Optional border for separation
 
         p {
             margin: 10px 0; // Spacing between paragraphs
+            font-size: 16px; // Adjust font size
         }
 
         .EditProfile,
@@ -18,12 +21,21 @@
             margin: 10px 0; // Space between links
             padding: 10px; // Padding inside links
             text-decoration: none; // Remove underline from links
-            color: #007bff; // Change link color
+            color: #007bff; // Default link color
             border-radius: 5px; // Rounded corners
+            transition: background-color 0.3s ease, color 0.3s ease; // Smooth transition for hover and active states
 
             &:hover {
-                background-color: #e7f1ff; // Hover effect
+                background-color: #b9cbe5; // Hover effect background
+                color: black;
             }
+        }
+
+        .activeLink {
+            background-color: #007bff; // Active background color
+            color: white; // White text color for active state
+            font-weight: bold; // Emphasize active link
+            border-radius: 5px; // Keep the same rounded corners
         }
     }
 
