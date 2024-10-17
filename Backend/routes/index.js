@@ -15,6 +15,7 @@ const DeleteBlog = require('../controller/BlogPage/BlogDelete');
 const TempBlogAdd=require('../controller/BlogPage/TempBlogAdd');
 const DeleteTempBlog=require('../controller/TempBlog/TempDelete');
 const TempToMain = require('../controller/TempBlog/TemptoMain');
+const BlogUpdate=require('../controller/BlogPage/BlogUpdate');
 
 //User
 const Login = require('../controller/User/Login');
@@ -38,6 +39,10 @@ router.post('/adminaddBlog',authToken,checkUserRole,AddBlog);
 router.post('/tempBlogAdd', authToken,TempBlogAdd);
 router.post('/deleteTempBlog',authToken, checkUserRole, DeleteTempBlog);
 router.post('/tempToMain',authToken, checkUserRole, TempToMain);
+router.post('/deleteanyBlog', authToken, checkUserRole, DeleteBlog);
+router.post('/deleteyourBlog', authToken, DeleteBlog);
+router.post('/updateanyBlog', authToken, checkUserRole, BlogUpdate);
+router.post('/updateyourBlog', authToken, BlogUpdate);
 
 
 //BlogFetch
